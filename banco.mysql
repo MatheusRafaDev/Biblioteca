@@ -1,0 +1,27 @@
+CREATE TABLE tb_aluno (
+   id_aluno				int primary key auto_increment,
+   nm_nome				varchar(100),
+   nr_telefone			varchar(14),
+   nm_endereco			varchar(100),
+   tp_sexo				varchar(20),
+   nm_sala				varchar(100),
+   ds_email				varchar(100),
+   ds_senha				varchar(100)
+   )ENGINE=inno_db;
+   
+   
+   CREATE TABLE tb_livro (
+   id_livro				int primary key auto_increment,
+   nm_nome				varchar(100),
+   nm_descricao			varchar(250),
+   nm_genero			varchar(100)
+   )ENGINE=inno_db;
+   
+    CREATE TABLE tb_emprestimo (
+   id_aluno				int,
+   id_livro				int,
+   FOREIGN KEY (id_aluno) REFERENCES tb_aluno(id_aluno),
+   FOREIGN KEY (id_livro) REFERENCES tb_livro(id_livro)
+   )ENGINE=inno_db;
+    
+    

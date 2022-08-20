@@ -1,0 +1,19 @@
+
+
+Host: sql10.freesqldatabase.com
+Database name: sql10512690
+Database user: sql10512690
+Database password: 9cWMsbzuSb
+Port number: 3306
+
+
+npx sequelize-auto -h sql10.freesqldatabase.com -d sql10512690 -u sql10512690 -x 9cWMsbzuSb -e mysql -o models -l esm
+
+Banco de dados: matheusrafazz
+Nome de usuário: matheusrafazz
+Email: rafaelmatheus061@gmail.com
+host: db4free.net
+senha: 10092004
+
+
+npx sequelize-auto -h db4free.net -d matheusrafazz -u matheusrafazz -x 10092004 -e mysql -o models -l esm
